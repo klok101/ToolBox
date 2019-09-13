@@ -6,61 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <CheckBox
+        android:id="@+id/CBgen1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="@dimen/checkBoxStart"
+        android:layout_marginTop="@dimen/checkBoxTop1"
+        android:text="@string/cb1"
+        android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
+        android:id="@+id/CBgen2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/CB"/>
+        android:layout_marginStart="@dimen/checkBoxStart"
+        android:layout_marginTop="@dimen/checkBoxTop2"
+        android:text="@string/cb2"
+        android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <CheckBox
+        android:id="@+id/CBgen3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/CBmusic"/>
+        android:layout_marginStart="@dimen/checkBoxStart"
+        android:layout_marginTop="@dimen/checkBoxTop3"
+        android:text="@string/cb3"
+        android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <CheckBox
+        android:id="@+id/CBgen4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/CBmusic"/>
+        android:layout_marginStart="@dimen/checkBoxStart"
+        android:layout_marginTop="@dimen/checkBoxTop4"
+        android:text="@string/cb4"
+        android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <CheckBox
+        android:id="@+id/CBgen5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/CBmusic"/>
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/RBcharmander"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/RBbulbasuar"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/RBsquirtle"/>
-    </RadioGroup>
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <Item>Blue</Item>
-        <Item>Red</Item>
-        <Item>Green</Item>
-        <Item>Yellow</Item>
-    </Spinner>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_marginStart="@dimen/checkBoxStart"
+        android:layout_marginTop="@dimen/checkBoxTop5"
+        android:text="@string/cb5"
+        android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="500dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pokemonlogo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/checkBoxLabelStart"
+        android:layout_marginTop="@dimen/checkBoxLabel"
+        android:text="@string/genText"
+        android:textSize="@dimen/checkBoxTextSizeLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

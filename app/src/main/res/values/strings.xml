@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">ToolBox</string>
-    <string name="tb1">Survey Time!</string>
+
+    <string name="genText">Select your favorite generations!</string>
+    <string name="cb1">Generation 1</string>
+    <string name="cb2">Generation 2</string>
+    <string name="cb3">Generation 3</string>
+    <string name="cb4">Generation 4</string>
+    <string name="cb5">Generation 5</string>
+
+
 </resources>
