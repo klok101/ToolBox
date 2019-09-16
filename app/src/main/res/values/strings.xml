@@ -1,12 +1,31 @@
 <resources>
     <string name="app_name">ToolBox</string>
 
-    <string name="genText">Select your favorite generations!</string>
+    <string name="genText">Select your favorite generation!</string>
     <string name="cb1">Generation 1</string>
     <string name="cb2">Generation 2</string>
     <string name="cb3">Generation 3</string>
     <string name="cb4">Generation 4</string>
     <string name="cb5">Generation 5</string>
+
+    <string name="next">NEXT</string>
+    <string name="back">BACK</string>
+    <string name="title_activity_second_page">secondPage</string>
+
+    <string name="selectName">Select a name for your pokemon!</string>
+
+    <string name="selectSex">Select the gender of your pokemon!</string>
+
+    <string name="selectSexChoice">Male ------- Female</string>
+
+    <string-array name="names">
+        <item>Alfred</item>
+        <item>Josepher</item>
+        <item>Alice</item>
+        <item>Denna</item>
+        <item>Karen</item>
+        <item>Chris</item>
+    </string-array>
 
 
 </resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/darkthemebackground"
     tools:context=".MainActivity">
 
     <CheckBox
@@ -11,44 +12,63 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/checkBoxStart"
-        android:layout_marginTop="@dimen/checkBoxTop1"
+        android:layout_marginTop="@dimen/checkBoxTop2"
+        android:layout_marginEnd="@dimen/checkBoxStart"
         android:text="@string/cb1"
         android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_corner_checks"
+        android:textColor="@color/colorAccent"
+        android:onClick="shareInfo1"/>
 
     <CheckBox
         android:id="@+id/CBgen2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/checkBoxStart"
-        android:layout_marginTop="@dimen/checkBoxTop2"
+        android:layout_marginTop="@dimen/checkBoxTop3"
+        android:layout_marginEnd="@dimen/checkBoxStart"
         android:text="@string/cb2"
         android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_corner_checks"
+        android:textColor="@color/colorAccent"
+        android:onClick="shareInfo2"/>
 
     <CheckBox
         android:id="@+id/CBgen3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/checkBoxStart"
-        android:layout_marginTop="@dimen/checkBoxTop3"
+        android:layout_marginTop="@dimen/checkBoxTop4"
+        android:layout_marginEnd="@dimen/checkBoxStart"
         android:text="@string/cb3"
         android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_corner_checks"
+        android:textColor="@color/colorAccent"
+        android:onClick="shareInfo3"/>
 
-    <CheckBox
+    <!--<CheckBox
         android:id="@+id/CBgen4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/checkBoxStart"
         android:layout_marginTop="@dimen/checkBoxTop4"
+        android:layout_marginEnd="@dimen/checkBoxStart"
         android:text="@string/cb4"
         android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_corner_checks"
+        android:textColor="@color/colorAccent"/>
 
     <CheckBox
         android:id="@+id/CBgen5"
@@ -56,32 +76,52 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/checkBoxStart"
         android:layout_marginTop="@dimen/checkBoxTop5"
+        android:layout_marginEnd="@dimen/checkBoxStart"
         android:text="@string/cb5"
         android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="500dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_corner_checks"
+        android:textColor="@color/colorAccent"/>
+        -->
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/pokeimageheight"
+        android:layout_marginTop="@dimen/checkBoxLabelStart"
         android:src="@drawable/pokemonlogo"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<Button
+        android:layout_width="@dimen/nextimagewidth"
+        android:layout_height="@dimen/nextimageheight"
+        android:layout_marginStart="@dimen/nextStart"
+        android:layout_marginTop="@dimen/nextTop"
+        android:layout_marginEnd="@dimen/nextStart"
+        android:drawableBottom="@android:drawable/ic_menu_send"
+        android:text="@string/next"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/colorAccent"/>
+        -->
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/checkBoxLabelStart"
         android:layout_marginTop="@dimen/checkBoxLabel"
+        android:layout_marginEnd="@dimen/checkBoxLabelStart"
+        android:background="@drawable/rounded_corner"
+        android:soundEffectsEnabled="false"
         android:text="@string/genText"
+        android:textColor="@color/lightBlue"
         android:textSize="@dimen/checkBoxTextSizeLabel"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
