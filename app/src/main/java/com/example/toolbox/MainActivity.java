@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void shareInfo1(View v){
+    public void shareInfo1(View v) {
 
-        CheckBox myGen = (CheckBox) findViewById(R.id.CBgen1);
+        CheckBox myGen = findViewById(R.id.CBgen1);
 
         String myGenStr = myGen.getText().toString();
 
-        Intent intent = new Intent(this,secondActivity.class);
+        Intent intent = new Intent(this, secondActivity.class);
 
         myGen.setChecked(false);
 
@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void shareInfo2(View v){
+    public void shareInfo2(View v) {
 
-        CheckBox myGen = (CheckBox) findViewById(R.id.CBgen2);
+        CheckBox myGen = findViewById(R.id.CBgen2);
 
         String myGenStr = myGen.getText().toString();
 
-        Intent intent = new Intent(this,secondActivity.class);
+        Intent intent = new Intent(this, secondActivity.class);
 
         myGen.setChecked(false);
 
@@ -47,16 +47,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
 
-
     }
 
-    public void shareInfo3(View v){
+    public void shareInfo3(View v) {
 
-        CheckBox myGen = (CheckBox) findViewById(R.id.CBgen3);
+        CheckBox myGen = findViewById(R.id.CBgen3);
 
         String myGenStr = myGen.getText().toString();
 
-        Intent intent = new Intent(this,secondActivity.class);
+        Intent intent = new Intent(this, secondActivity.class);
 
         myGen.setChecked(false);
 
