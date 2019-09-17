@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkthemebackground"
+    tools:context=".thirdActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pokeimageheight"
+        android:layout_marginTop="@dimen/checkBoxLabelStart"
+        android:src="@drawable/pokemonlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spinnerStart"
+        android:layout_marginTop="@dimen/spinnerTop"
+        android:layout_marginEnd="@dimen/spinnerStart"
+        android:background="@drawable/rounded_corner_lightmode"
+        android:gravity="center"
+        android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/checkBoxLabelStart"
+        android:layout_marginTop="@dimen/checkBoxLabel"
+        android:layout_marginEnd="@dimen/checkBoxLabelStart"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:soundEffectsEnabled="false"
+        android:text="@string/selectName"
+        android:textColor="@color/lightBlue"
+        android:textSize="@dimen/checkBoxTextSizeLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/tbwidth"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/checkBoxLabelStart"
+        android:layout_marginTop="@dimen/switchTop"
+        android:layout_marginEnd="@dimen/checkBoxLabelStart"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:soundEffectsEnabled="false"
+        android:text="@string/selectSex"
+        android:textColor="@color/lightBlue"
+        android:textSize="@dimen/checkBoxTextSizeLabel"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/tbwidth"
+        android:layout_height="@dimen/tbheightswitch"
+        android:layout_marginTop="@dimen/switchTop2"
+        android:background="@drawable/rounded_corner_lightmode"
+        android:gravity="center_horizontal"
+        android:text="@string/selectSexChoice"
+        android:textColor="@color/black"
+        android:textSize="@dimen/checkBoxTextSize"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switcheroo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/switchbTop"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/nextimagewidth"
+        android:layout_height="@dimen/nextimageheight"
+        android:layout_marginStart="@dimen/nextStart"
+        android:layout_marginTop="@dimen/nextTop3"
+        android:layout_marginEnd="@dimen/nextEnd"
+        android:drawableBottom="@android:drawable/ic_menu_send"
+        android:onClick="shareInfoFinal"
+        android:text="@string/next"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

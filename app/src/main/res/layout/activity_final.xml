@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkthemebackground"
+    tools:context=".finalActivity">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/checkBoxStart"
+        android:layout_marginEnd="@dimen/checkBoxStart"
+        android:layout_marginBottom="@dimen/checkBoxLabelStart"
+        android:background="@drawable/rounded_corner_lightmode"
+        android:gravity="center"
+        android:soundEffectsEnabled="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/names"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/checkBoxStart"
+        android:layout_marginTop="@dimen/checkBoxLabelStart"
+        android:layout_marginEnd="@dimen/checkBoxStart"
+        android:background="@drawable/rounded_corner_lightmode"
+        android:gravity="center"
+        android:soundEffectsEnabled="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/names"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imageHeight"
+        android:layout_marginTop="@dimen/activityButtonHeight"
+        android:layout_marginBottom="@dimen/activityButtonHeight"
+        android:background="@drawable/trans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewPok" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/nextimagewidth"
+        android:layout_height="@dimen/nextimageheight"
+        android:layout_marginStart="@dimen/checkBoxLabelStart"
+        android:layout_marginTop="@dimen/checkBoxLabelStart"
+        android:drawableBottom="@android:drawable/ic_menu_rotate"
+        android:onClick="goBack"
+        android:text="@string/back"
+        android:textAlignment="center"
+        android:textColor="#FF1010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
